@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrique Ajin</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/mobile.css">
+</head>
+<body>
+
+    <!-- Header section -->
+    <!----------------------------------------------------------------------------  -->
+    <header>
+        <section class="header">
+            <i class="fas fa-bars" id="hamburguer"></i>
+            <div class="overlay" id="menu">
+                <a href="javascript:void(0)" id="close">×</a>
+                <div class="overlay-content">
+                    <a href="#" class="overlay-content__item">Inicio</a>
+                    <a href="#" class="overlay-content__item">Sobre mí</a>
+                    <a href="#" class="overlay-content__item">Proyectos</a>
+                    <a href="#" class="overlay-content__item">Contacto</a>
+                </div>
+            </div>
+            <a href="#" class="logo"><h2>ENRIQUE AJIN</h2></a>
+        </section>
+    </header>
+    <!----------------------------------------------------------------------------  -->
+
+    <!-- Main -->
+    <!----------------------------------------------------------------------------  -->
+    <main class="main-container">
+        <!-- Welcome section -->
+        <!----------------------------------------------------------------------------  -->
+        <section class="welcome-section">
+            <!-- grid container -->
+            <section class="grid-welcome-container">
+                <div class="welcome-illustration">
+                    <img src="./assets/images/Illustration.svg" alt="Ilustración de un programador con gafas sonriente mientras trabaja sentado en su espacio de trabajo">
+                </div>
+                <div class="welcome-content">
+                    <h2 class="welcome-greetings">¡Hola!</h2>
+                    <h1 class="welcome-title">Soy Enrique Ajin</h1>
+                    <p class="welcome-text">Desarrollador Frontend apasionado por la maquetación de diseños creativos e innovadores</p>
+                    <div class="welcome-buttons-container">
+                        <button class="welcome-cv-button">Descargar CV</button>
+                        <button class="welcome-contact-button">Contactar</button>
+                    </div>
+                </div>
+            </section>
+            <!-- ver más section -->
+            <section class="see-more-container">
+                <p class="see-more__text">Ver más</p>
+                <span class="see-more__arrow">></span>
+            </section>
+        </section>
+        <!----------------------------------------------------------------------------  -->
+
+        <!-- Projects section -->
+        <!----------------------------------------------------------------------------  -->
+        <section class="projects-section">
+            <!-- Project title -->
+            <section class="projects-title">
+                <h2 class="projects-title-text">Proyectos</h2>
+                <div class="projects-title-line">-----</div>
+            </section>
+            <!-- cards section-->
+            <section class="projects-cards-container">
+                <!-- grid cards container -->
+                <section class="grid-projects-container">
+                    <!-- Proyecto Fylo -->
+                    <div class="project-card">
+                        <p class="project-title">Fylo</p>
+                        <img src="./assets/images/Fylo.png" alt="Imagen de la vista móvil del proyecto Fylo">
+                        <div class="project-buttons-container">
+                            <button class="view-project-button">Ver proyecto</button>
+                            <button class="view-code-button">Ver código</button>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto Platzi Video -->
+                    <div class="project-card">
+                        <p class="project-title">Fylo</p>
+                        <img src="./assets/images/PlatziVideo.png" alt="Imagen de la vista móvil del proyecto Platzi Video">
+                        <div class="project-buttons-container">
+                            <button class="view-project-button">Ver proyecto</button>
+                            <button class="view-code-button">Ver código</button>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto Batatabit -->
+                    <div class="project-card">
+                        <p class="project-title">Fylo</p>
+                        <img src="./assets/images/Batatabit.png" alt="Imagen de la vista móvil del proyecto Batatabit">
+                        <div class="project-buttons-container">
+                            <button class="view-project-button">Ver proyecto</button>
+                            <button class="view-code-button">Ver código</button>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>   
+        <!----------------------------------------------------------------------------  -->
+
+        <!-- Sección de contacto -->
+        <!----------------------------------------------------------------------------  -->
+        <section class="contact-section">
+            <h2 class="contact-title">Contacto</h2>
+            <div class="contact-line">-----</div>
+            <!-- grid container contacto -->
+            <section class="grid-contact-container">
+                <!-- WhatsApp -->
+                <div class="contact-card">
+                    <p class="contact-card__title">Envíame un mensaje por WhatsApp</p>
+                    <a href="" class="contact-card__button">Enviar Mensaje</a>
+                </div>
+
+                <!-- Correo electrónico -->
+                <div class="contact-card">
+                    <p class="contact-card__title">Envíame un correo electrónico</p>
+                    <a href="" class="contact-card__button">Enviar correo</a>
+                </div>
+
+                <!-- Llenar formulario -->
+                <div class="contact-card">
+                    <p class="contact-card__title">Llenar formulario</p>
+                    <div class="form-container">
+                        <form action="" class="form">
+                            <!-- Nombre -->
+                            <label for="name" class="form-text">Nombre</label>
+                            <input type="text" id="name" autocomplete="name" placeholder="Tu nombre">
+
+                            <!-- Correo electrónico -->
+                            <label for="email" class="form-text">Correo electrónico:</label>
+                            <input type="text" id="email" autocomplete="email" placeholder="Tu correo electrónico">
+
+                            <!-- Asunto -->
+                            <label for="subject" class="form-text">Asunto:</label>
+                            <input type="text" id="subject" placeholder="Ingresa el asunto del mensaje">
+
+                            <!-- Mensaje  -->
+                            <label for="message" class="form-text">Mensaje:</label>
+                            <textarea name="message" id="message" cols="30" rows="5"></textarea>
+
+                            <!-- Botón enviar  -->
+                            <input type="submit" name="submit"></input>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!----------------------------------------------------------------------------  -->
+
+        <!-- Sección del footer  -->
+        <!----------------------------------------------------------------------------  -->
+        <section class="footer-section">
+            <!-- flexbox del footer  -->
+            <section class="footer-flex-container">
+                <h2 class="footer-title">ENRIQUE AJIN</h2>
+                    <!-- redes sociales  -->
+                <div class="social-media-container">
+
+                    <!-- Twitter  -->
+                    <div class="social-media__twitter">
+                        <a href="https://twitter.com/enriqueajin_">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+
+                    <!-- Linkedin  -->
+                    <div class="social-media__linkedin">
+                        <a href="https://www.linkedin.com/in/kebyn-ajin/">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!----------------------------------------------------------------------------  -->
+    </main>
+    <!----------------------------------------------------------------------------  -->
+    <script src="./index.js"></script>
+</body>
+</html>

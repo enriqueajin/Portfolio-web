@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+
+    /* Paleta de colores del proyecto  */
+
+    --green: #00ffce;
+    --header-background: #1d1d1b;
+    --welcome-background: #212429;
+}
+@font-face {
+    font-family: "Bebas";
+    src: url("../fonts/Bebas/BebasNeue-Regular.ttf");
+}
+@font-face {
+    font-family: "Champagne";
+    src: url("../fonts/Champagne/Champagne.ttf");
+}
+html {
+    font-size: 62.5%;
+    font-size: 1.6rem;
+    font-family: "Champagne", Arial;
+}
+header {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 66px;
+    min-width: 320px;
+    background-color: var(--header-background);
+}
+.header {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.fa-bars {
+    color: white;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.9); 
+    overflow-x: hidden; 
+    transition: 0.3s;
+}
+.logo {
+    text-decoration: none;
+    margin-left: 10px;
+    font-family: "Bebas", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    color: var(--green)
+}
+
+/* Main section  */
+
+.main-container {
+    width: 100vw;
+    min-width: 320px;
+}
+.welcome-section {
+    background-color: var(--welcome-background);
+    color: white;
+}
+.grid-welcome-container {
+    display: grid;
+    justify-items: center;
+    gap: 50px 0;
+    grid-template: auto / 1fr;
+    padding-top: 25px;
+}
+.welcome-illustration {
+    width: 90%;
+}
+.welcome-illustration img {
+    width: 100%;
+}
+.welcome-content {
+    margin-left: 30px;
+}
