@@ -15,15 +15,15 @@
     <!-- Header section -->
     <!----------------------------------------------------------------------------  -->
     <header>
-        <section class="header">
+        <section class="header" id="home">
             <i class="fas fa-bars" id="hamburguer"></i>
             <div class="overlay" id="menu">
                 <a href="javascript:void(0)" id="close">×</a>
                 <div class="overlay-content">
-                    <a href="#" class="overlay-content__item">Inicio</a>
-                    <a href="#" class="overlay-content__item">Sobre mí</a>
-                    <a href="#" class="overlay-content__item">Proyectos</a>
-                    <a href="#" class="overlay-content__item">Contacto</a>
+                    <a href="#home" class="overlay-content__item">Inicio</a>
+                    <a href="#about-me" class="overlay-content__item">Sobre mí</a>
+                    <a href="#projects" class="overlay-content__item">Proyectos</a>
+                    <a href="#contact" class="overlay-content__item">Contacto</a>
                 </div>
             </div>
             <a href="#" class="logo"><h2>ENRIQUE AJIN</h2></a>
@@ -36,7 +36,7 @@
     <main class="main-container">
         <!-- Welcome section -->
         <!----------------------------------------------------------------------------  -->
-        <section class="welcome-section">
+        <section class="welcome-section" id="about-me">
             <!-- grid container -->
             <section class="grid-welcome-container">
                 <div class="welcome-illustration">
@@ -62,7 +62,7 @@
 
         <!-- Projects section -->
         <!----------------------------------------------------------------------------  -->
-        <section class="projects-section">
+        <section class="projects-section" id="projects">
             <!-- Project title -->
             <section class="projects-title">
                 <h2 class="projects-title-text">Proyectos</h2>
@@ -77,28 +77,28 @@
                         <p class="project-title">Fylo</p>
                         <img class="project-image" src="./assets/images/Fylo.png" alt="Imagen de la vista móvil del proyecto Fylo">
                         <div class="project-buttons-container">
-                            <button class="view-project-button"><i class="far fa-eye"></i>Visualizar</button>
-                            <button class="view-code-button"><i class="fab fa-github"></i>Código</button>
+                            <a class="view-project-button" href="https://enriqueajin.github.io/FyloLayout/index.html"><i class="far fa-eye"></i>Visualizar</a>
+                            <a class="view-code-button" href="https://github.com/enriqueajin/FyloLayout"><i class="fab fa-github"></i>Código</a>
                         </div>
                     </div>
 
                     <!-- Proyecto Platzi Video -->
                     <div class="project-card">
-                        <p class="project-title">Fylo</p>
+                        <p class="project-title">Platzi Video</p>
                         <img class="project-image" src="./assets/images/PlatziVideo.png" alt="Imagen de la vista móvil del proyecto Platzi Video">
                         <div class="project-buttons-container">
-                            <button class="view-project-button"><i class="far fa-eye"></i>Visualizar</button>
-                            <button class="view-code-button"><i class="fab fa-github"></i>Código</button>
+                            <a class="view-project-button" href="https://enriqueajin.github.io/PlatziVideoLayout/index.html"><i class="far fa-eye"></i>Visualizar</a>
+                            <a class="view-code-button" href="https://github.com/enriqueajin/PlatziVideoLayout"><i class="fab fa-github"></i>Código</a>
                         </div>
                     </div>
 
                     <!-- Proyecto Batatabit -->
                     <div class="project-card">
-                        <p class="project-title">Fylo</p>
+                        <p class="project-title">Batatabit</p>
                         <img class="project-image" src="./assets/images/Batatabit.png" alt="Imagen de la vista móvil del proyecto Batatabit">
                         <div class="project-buttons-container">
-                            <button class="view-project-button"><i class="far fa-eye"></i>Visualizar</button>
-                            <button class="view-code-button"><i class="fab fa-github"></i>Código</button>
+                            <a class="view-project-button" href="https://enriqueajin.github.io/MobileFirstProject/index.html"><i class="far fa-eye"></i>Visualizar</a>
+                            <a class="view-code-button" href="https://github.com/enriqueajin/MobileFirstProject"><i class="fab fa-github"></i>Código</a>
                         </div>
                     </div>
                 </section>
@@ -108,7 +108,7 @@
 
         <!-- Sección de contacto -->
         <!----------------------------------------------------------------------------  -->
-        <section class="contact-section">
+        <section class="contact-section" id="contact">
             <section class="contact-title">
                 <h2 class="contact-title-text">Contacto</h2>
                 <div class="contact-title-line"></div>
@@ -118,38 +118,38 @@
                 <!-- WhatsApp -->
                 <div class="contact-card">
                     <p class="contact-card__title">Envíame un mensaje por WhatsApp</p>
-                    <a href="" class="contact-card__button">Enviar Mensaje</a>
+                    <a href="https://api.whatsapp.com/send?phone=50256980430" class="contact-card__button whatsapp-button"><i class="fab fa-whatsapp"></i>Enviar mensaje</a>
                 </div>
 
                 <!-- Correo electrónico -->
                 <div class="contact-card">
                     <p class="contact-card__title">Envíame un correo electrónico</p>
-                    <a href="" class="contact-card__button">Enviar correo</a>
+                    <a href="mailto:enriqueajin@outlook.com" class="contact-card__button email-button"><i class="far fa-envelope"></i>Enviar correo</a>
                 </div>
 
                 <!-- Llenar formulario -->
-                <div class="contact-card">
-                    <p class="contact-card__title">Llenar formulario</p>
+                <div class="contact-card contact-form">
+                    <p class="contact-card__title fill-form-title">Llenar formulario</p>
                     <div class="form-container">
                         <form action="" class="form">
                             <!-- Nombre -->
-                            <label for="name" class="form-text">Nombre</label>
-                            <input type="text" id="name" autocomplete="name" placeholder="Tu nombre">
+                            <label for="name" class="form-text">Nombre:</label>
+                            <input type="text" id="name" autocomplete="name" placeholder="Tu nombre" class="form-input">
 
                             <!-- Correo electrónico -->
                             <label for="email" class="form-text">Correo electrónico:</label>
-                            <input type="text" id="email" autocomplete="email" placeholder="Tu correo electrónico">
+                            <input type="text" id="email" autocomplete="email" placeholder="Tu correo electrónico" class="form-input">
 
                             <!-- Asunto -->
                             <label for="subject" class="form-text">Asunto:</label>
-                            <input type="text" id="subject" placeholder="Ingresa el asunto del mensaje">
+                            <input type="text" id="subject" placeholder="Ingresa el asunto del mensaje" class="form-input">
 
                             <!-- Mensaje  -->
                             <label for="message" class="form-text">Mensaje:</label>
-                            <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                            <textarea name="message" id="message" cols="32" rows="5" class="message-field"></textarea>
 
                             <!-- Botón enviar  -->
-                            <input type="submit" name="submit"></input>
+                            <input type="submit" name="submit" class="form-submit"></input>
                         </form>
                     </div>
                 </div>
@@ -159,7 +159,7 @@
 
         <!-- Sección del footer  -->
         <!----------------------------------------------------------------------------  -->
-        <section class="footer-section">
+        <footer class="footer-section">
             <!-- flexbox del footer  -->
             <section class="footer-flex-container">
                 <h2 class="footer-title">ENRIQUE AJIN</h2>
@@ -181,7 +181,7 @@
                     </div>
                 </div>
             </section>
-        </section>
+        </footer>
         <!----------------------------------------------------------------------------  -->
     </main>
     <!----------------------------------------------------------------------------  -->
