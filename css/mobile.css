@@ -62,13 +62,17 @@ header {
     overflow-x: hidden; 
     transition: 0.3s;
 }
-.logo {
+/* .logo {
     text-decoration: none;
     margin-left: 10px;
     font-family: "Bebas", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1rem;
     letter-spacing: 0.1rem;
     color: var(--green)
+} */
+.logo-img {
+    width: 70%;
+    margin-left: 7px;
 }
 .main-container {
     width: 100vw;
@@ -333,7 +337,7 @@ header {
 }
 .form-input {
     width: 100%;
-    height: 30px;
+    height: 35px;
     margin-bottom: 10px;
     padding-left: 5px;
     outline: none;
@@ -363,6 +367,33 @@ header {
 .footer-section {
     width: 100%;
     min-width: 320px;
+    padding: 20px 5px;
     color: white;
     background-color: var(--footer-background);
+}
+.footer-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-logo {
+    width: 50%;
+}
+.social-media-container {
+    display: flex;
+    padding-right: 6px;
+}
+.social-media__twitter, .social-media__linkedin {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin: 0 5px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.social-media__twitter a, .social-media__linkedin a {
+    font-size: 0.6rem;
+    color: white;
 }
