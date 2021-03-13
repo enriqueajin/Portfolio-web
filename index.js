@@ -19,37 +19,40 @@ hideNavButton.onclick = function() {
 }
 
 // Loop for all buttons in navBar to hide it when a button is clicked.
-if (!matchDesktopMedia()) {
+window.addEventListener('resize', () => {
+    // debugger
     Array.prototype.forEach.call(navButtons, button => {
-        button.onclick = () => navBar.style.width = "0"
-    });
-}
+        button.onclick = () => {
+            (!matchDesktopMedia()) ? navBar.style.width = "0" : navBar.style.width = "100%"
+            
+    }});
+})
+
 
 function matchDesktopMedia(media = desktopMedia) {
     // debugger
     return media.matches
 }
 
-function hideHamburguerOnDesktop() {
-    if (matchDesktopMedia()) {
-        // navBar.classList.remove("overlay")
-        // navBox.classList.remove("overlay-box")
-        // navList.classList.remove("overlay-content")
-        hideNavButton.classList.remove("fas", "fa-times")
-        showNavButton.classList.remove("fas", "fa-bars")
-    }
+// Function to show hamburguer button when media query is desktop
+function hideHamburguerButton() {
+    hideNavButton.classList.remove("fas", "fa-times")
+    showNavButton.classList.remove("fas", "fa-bars")
 }
 
-function onResize() {
+// Function to show hamburguer button when media query is mobile or tablet
+function showHamburguerButton() {
+    hideNavButton.classList.add("fas", "fa-times")
+    showNavButton.classList.add("fas", "fa-bars")
+}
+
+// Function to change width of nav bar depending media query we are
+window.addEventListener('resize', () => {
     if (matchDesktopMedia()) {
         navBar.style.width = '100%'
+        hideHamburguerButton()
     } else {
         navBar.style.width = '0'
+        showHamburguerButton()
     }
-}
-
-hideHamburguerOnDesktop()
-window.addEventListener('resize', onResize)
-
-
-
+})

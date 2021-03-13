@@ -2,34 +2,43 @@
     width: 95%;
 }
 .welcome-greetings {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: lighter;
 }
 .welcome-title {
     margin: 10px 0;
-    font-size: 1.9rem;
+    font-size: 2.2rem;
     font-weight: lighter;
 }
 .welcome-text {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .see-more__text {
     font-size: 1rem;
 }
+.projects-title {
+    height: 120px;
+}
 .projects-title-text {
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 .projects-title-line {
-    width: 187.61px;
+    width: 206.38px;
 }
 .grid-projects-container {
     grid-template: auto / 360px 360px;
     justify-items: center;
     justify-content: center;
 }
+.view-project-button {
+    width: 140px;
+}
+..view-code-button {
+    width: 140px;
+}
 .contact-title-text {
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 .contact-title-line {
-    width: 188.88px;
+    width: 207.77px;
 }
