@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 700px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 900px)">
 </head>
 <body>
 
@@ -17,10 +19,11 @@
     <header>
         <section class="header" id="home">
             <i class="fas fa-bars" id="show-nav"></i>
+            <img class ="logo-img" src="./assets/images/header-logo.svg" alt="Texto color celeste con mi nombre que funciona como logo">
             <div class="overlay" id="nav-bar">
-                <div class="overlay-box">
+                <div class="overlay-box" id="nav-box">
                     <i class="fas fa-times" id="hide-nav"></i>
-                    <div class="overlay-content">
+                    <div class="overlay-content" id="nav-list">
                         <a href="#home" class="overlay-content__item">Inicio</a>
                         <a href="#about-me" class="overlay-content__item">Sobre mí</a>
                         <a href="#projects" class="overlay-content__item">Proyectos</a>
@@ -28,7 +31,7 @@
                     </div>
                 </div>   
             </div>
-            <img class ="logo-img" src="./assets/images/header-logo.svg" alt="Texto color celeste con mi nombre que funciona como logo">
+            
         </section>
     </header>
     <!----------------------------------------------------------------------------  -->
@@ -78,7 +81,7 @@
                 <section class="grid-projects-container">
                     <!-- Proyecto Fylo -->
                     <div class="project-card">
-                        <p class="project-title">Fylo</p>
+                        <p class="project-title">Fylo Layout</p>
                         <img class="project-image" src="./assets/images/Fylo.png" alt="Imagen de la vista móvil del proyecto Fylo">
                         <div class="project-buttons-container">
                             <a class="view-project-button" href="https://enriqueajin.github.io/FyloLayout/index.html"><i class="far fa-eye"></i>Visualizar</a>
@@ -88,7 +91,7 @@
 
                     <!-- Proyecto Platzi Video -->
                     <div class="project-card">
-                        <p class="project-title">Platzi Video</p>
+                        <p class="project-title">Platzi Video Layout</p>
                         <img class="project-image" src="./assets/images/PlatziVideo.png" alt="Imagen de la vista móvil del proyecto Platzi Video">
                         <div class="project-buttons-container">
                             <a class="view-project-button" href="https://enriqueajin.github.io/PlatziVideoLayout/index.html"><i class="far fa-eye"></i>Visualizar</a>
@@ -96,9 +99,19 @@
                         </div>
                     </div>
 
+                    <!-- Proyecto Movies -->
+                    <div class="project-card">
+                        <p class="project-title">Movies Layout</p>
+                        <img class="project-image" src="./assets/images/Movies.png" alt="Imagen de la vista móvil del proyecto Movies">
+                        <div class="project-buttons-container">
+                            <a class="view-project-button" href="https://enriqueajin.github.io/MoviesLayout/index.html"><i class="far fa-eye"></i>Visualizar</a>
+                            <a class="view-code-button" href="https://github.com/enriqueajin/MoviesLayout"><i class="fab fa-github"></i>Código</a>
+                        </div>
+                    </div>
+
                     <!-- Proyecto Batatabit -->
                     <div class="project-card">
-                        <p class="project-title">Batatabit</p>
+                        <p class="project-title">Batatabit Layout</p>
                         <img class="project-image" src="./assets/images/Batatabit.png" alt="Imagen de la vista móvil del proyecto Batatabit">
                         <div class="project-buttons-container">
                             <a class="view-project-button" href="https://enriqueajin.github.io/MobileFirstProject/index.html"><i class="far fa-eye"></i>Visualizar</a>

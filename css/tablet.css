@@ -1,0 +1,35 @@
+.header {
+    width: 95%;
+}
+.welcome-greetings {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+.welcome-title {
+    margin: 10px 0;
+    font-size: 1.9rem;
+    font-weight: lighter;
+}
+.welcome-text {
+    font-size: 1rem;
+}
+.see-more__text {
+    font-size: 1rem;
+}
+.projects-title-text {
+    font-size: 2rem;
+}
+.projects-title-line {
+    width: 187.61px;
+}
+.grid-projects-container {
+    grid-template: auto / 360px 360px;
+    justify-items: center;
+    justify-content: center;
+}
+.contact-title-text {
+    font-size: 2rem;
+}
+.contact-title-line {
+    width: 188.88px;
+}

@@ -1,0 +1,34 @@
+.header {
+    justify-content: space-between;
+}
+#show-nav {
+    display: none;
+}
+.overlay {
+    width: 100%;
+    position: static;
+    background-color: transparent;
+}
+.fa-times {
+    display: none;
+}
+.overlay-box {
+    height: 0;
+    padding: 0;
+}
+.overlay-content {
+    height: 66px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.overlay-content__item {
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+}
+.grid-welcome-container {
+    grid-template: 1fr / 1fr 1fr;
+}

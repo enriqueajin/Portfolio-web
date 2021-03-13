@@ -243,7 +243,7 @@ header {
     box-shadow: -7px 7px 11px 0px rgba(0,0,0,0.25);
 }
 .project-title {
-    margin-bottom: 7px;
+    margin: 10px 0;
 }
 .project-image {
     width: 90%;
@@ -322,12 +322,17 @@ header {
     justify-items: center;
     margin-top: 25px;
 }
+.form-container {
+    width: 90%;
+    max-width: 400px;
+}
 .contact-card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 85%;
-    padding: 20px;
+    height: 150px;
     text-align: center;
     color: white;
     background-color: var(--contact-card-background);
@@ -363,6 +368,7 @@ header {
 }
 .contact-form {
     text-align: left;
+    height: 500px;
 }
 .form-text {
     font-size: 0.7rem;
@@ -388,7 +394,7 @@ header {
     height: 40px;
     justify-content: center;
     align-items: center;
-    margin: 10px 0;
+
     outline: none;
     font-family: "Champagne";
     font-size: 0.8rem;
