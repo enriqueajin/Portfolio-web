@@ -31,7 +31,7 @@ function matchDesktopMedia(media = desktopMedia) {
 }
 
 function hideHamburguerOnDesktop() {
-    if (!matchDesktopMedia()) {
+    if (matchDesktopMedia()) {
         // navBar.classList.remove("overlay")
         // navBox.classList.remove("overlay-box")
         // navList.classList.remove("overlay-content")
