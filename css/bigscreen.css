@@ -1,0 +1,6 @@
+.grid-projects-container {
+    grid-template: 1fr / 360px 360px 360px 360px;
+}
+.projects-cards-container {
+    padding: 100px 0;
+}

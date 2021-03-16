@@ -38,7 +38,7 @@ button {
 header {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: 66px;
     min-width: 320px;
     background-color: var(--header-background);
@@ -98,7 +98,7 @@ header {
     margin-left: 7px;
 }
 .main-container {
-    width: 100vw;
+    width: 100%;
     min-width: 320px;
 }
 
@@ -114,19 +114,24 @@ header {
     justify-items: center;
     gap: 30px 0;
     grid-template: auto / 1fr;
-    padding-top: 25px;
+    padding-top: 30px;
 }
 .welcome-illustration {
-    width: 90%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 .welcome-illustration img {
-    width: 100%;
+    width: 90%;
     max-width: 700px;
 }
 .welcome-content {
     width: 87%;
-    justify-items: center;
-    align-items: center;
+    /* justify-items: center;
+    align-items: center; */
+}
+.welcome-content-flex {
+    height: 100%;
 }
 .welcome-greetings {
     font-size: 1.3rem;
@@ -221,8 +226,7 @@ header {
 }
 .projects-cards-container {
     width: 100%;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
 .grid-projects-container {
     display: grid;

@@ -31,11 +31,23 @@
 }
 .grid-welcome-container {
     grid-template: 1fr / 1fr 1fr;
+    padding: 80px 0;
 }
 .welcome-content-flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.see-more-container {
+    padding-top: 50px;
+}
+.projects-title {
+    padding-top: 60px;
+    height: 150px;
+}
+.contact-title {
+    height: 250px;
+    padding-top: 100px;
 }
 .grid-contact-container {
     grid-template: 1fr 1fr / 410px 410px;

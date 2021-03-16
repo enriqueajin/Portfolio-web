@@ -26,15 +26,19 @@
     width: 206.38px;
 }
 .grid-projects-container {
-    grid-template: auto / 360px 360px;
+    grid-template: auto / auto auto;
     justify-items: center;
     justify-content: center;
 }
 .view-project-button {
-    width: 140px;
+    width: 132px;
 }
 .view-code-button {
-    width: 140px;
+    width: 132px;
+}
+.contact-title {
+    height: 150px;
+    padding-top: 50px;
 }
 .contact-title-text {
     font-size: 2.2rem;

@@ -14,9 +14,14 @@ showNavButton.onclick = function() {
 
 // Function onclick to hide the navigation menu
 hideNavButton.onclick = function() {
-    if (matchDesktopMedia()) {}
+    // if (matchDesktopMedia()) {}
     navBar.style.width = "0"
 }
+
+Array.prototype.forEach.call(navButtons, button => {
+    button.onclick = () => {
+        (!matchDesktopMedia()) ? navBar.style.width = "0" : navBar.style.width = "100%"
+}});
 
 // Loop for all buttons in navBar to hide it when a button is clicked.
 window.addEventListener('resize', () => {
@@ -24,7 +29,6 @@ window.addEventListener('resize', () => {
     Array.prototype.forEach.call(navButtons, button => {
         button.onclick = () => {
             (!matchDesktopMedia()) ? navBar.style.width = "0" : navBar.style.width = "100%"
-            
     }});
 })
 
