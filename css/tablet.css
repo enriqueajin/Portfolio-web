@@ -30,11 +30,14 @@
     justify-items: center;
     justify-content: center;
 }
+.project-buttons-container {
+    width: 85%;
+}
 .view-project-button {
     width: 132px;
 }
 .view-code-button {
-    width: 132px;
+    width: 100%;
 }
 .contact-title {
     height: 150px;
